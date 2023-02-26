@@ -24,7 +24,7 @@ test: glad test_cpp
 	$(CXX) $(BIN)/glad.o $(BIN)/test.o -g $(LIB_FLAGS) -o $(BIN)/test.exe
 test_cpp:
 	$(info compiling test...)
-	$(CXX) $(SRC)/test.cpp $(OBJ_FLAGS) -I$(INCLUDE) -o $(BIN)/test.o
+	$(CXX) test.cpp $(OBJ_FLAGS) -I$(INCLUDE) -o $(BIN)/test.o
 
 
 # GLAD, required for GL calls
